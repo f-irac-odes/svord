@@ -5,7 +5,7 @@
     let { children, oncreate, onremove, entity = $bindable() }: { children: Snippet, 
         oncreate?: ({ entity, components}: { entity?: any, components?: keyof any }) => void,
         onremove?: ({ entity, components}: { entity?: any, components?: keyof any }) => void,
-        entity: any
+        entity?: any
     } = $props();
 
 
