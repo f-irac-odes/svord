@@ -1,3 +1,13 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import App from "$lib/App.svelte";
+	import { Canvas } from "@threlte/core";
+	import { World } from "@threlte/rapier";
+
+    let value;
+</script>
+
+<Canvas>
+    <World>
+        <App />
+    </World>
+</Canvas>
