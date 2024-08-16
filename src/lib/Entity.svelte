@@ -10,8 +10,7 @@
 
 
     const world = getEntitiesContext<any>();
-    const e = world.createEntity({}, oncreate)
-    entity = e;
+    entity = world.createEntity({}, oncreate)
     setEntityContext(entity);
 
     $effect(() => {
