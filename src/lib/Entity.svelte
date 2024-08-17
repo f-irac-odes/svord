@@ -2,7 +2,7 @@
     import { setEntityContext, getEntitiesContext } from "./hooks";
     import type { Snippet } from "svelte";
 
-    let { children, oncreate, onremove, entity = $bindable({}) }: { children: Snippet, 
+    let { children, oncreate, onremove, entity = $bindable() }: { children: Snippet, 
         oncreate?: ({ entity, components}: { entity?: any, components?: keyof any }) => void,
         onremove?: ({ entity, components}: { entity?: any, components?: keyof any }) => void,
         entity?: any
